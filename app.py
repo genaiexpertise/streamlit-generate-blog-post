@@ -13,7 +13,7 @@ def load_LLM(openai_api_key):
 
 #Page title and header
 st.set_page_config(
-    page_title="Blog Post Generator",
+    page_title="BlogGenie",
     page_icon="🧊",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -26,7 +26,7 @@ st.set_page_config(
 
 
 
-st.header("Blog Post Generator")
+st.header("Generate high-quality blog posts in minutes with BlogGenie!")
 
 
 #Intro: instructions
@@ -48,7 +48,12 @@ def get_openai_api_key():
 
 openai_api_key = get_openai_api_key()
 
+st.sidebar.markdown("""
+Generate high-quality blog posts in minutes with BlogGenie!
 
+Say goodbye to writer's block and tedious research. Our AI-powered blog post generator creates engaging, informative content on any topic you choose.
+
+""")
 #
 
 def generate_response(topic):
